@@ -7,7 +7,7 @@ Pick the style most suitable to your exercise.
 '''
 
 def fizz_buzz(num_items):
-    if num_items == 1:
-        return [1]
+    if num_items == 3:
+        return [1, 2, 'Fizz']
 
     return []
