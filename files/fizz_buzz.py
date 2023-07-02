@@ -13,8 +13,8 @@ def fizz_buzz(num_items):
 
 def __value_of(num):
     if num % 3 == 0:
-        'Fizz'
+        return 'Fizz'
     elif num % 5 == 0:
-        'Buzz'    
+        return 'Buzz'    
     else:
         return num

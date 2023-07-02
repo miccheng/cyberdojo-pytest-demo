@@ -2,41 +2,15 @@
 platform linux -- Python 3.9.1, pytest-6.2.2, py-1.10.0, pluggy-0.13.1 -- /usr/local/bin/python
 cachedir: .pytest_cache
 Using --random-order-bucket=global
-Using --random-order-seed=450536
+Using --random-order-seed=676371
 
 rootdir: /sandbox
 plugins: cov-2.11.1, mock-3.5.1, random-order-1.0.4
 collecting ... collected 4 items
 
-test_fizz_buzz.py::test_first_multiple_of_5 FAILED                       [ 25%]
-test_fizz_buzz.py::test_one_item PASSED                                  [ 50%]
-test_fizz_buzz.py::test_first_multiple_of_3 FAILED                       [ 75%]
+test_fizz_buzz.py::test_one_item PASSED                                  [ 25%]
+test_fizz_buzz.py::test_first_multiple_of_3 PASSED                       [ 50%]
+test_fizz_buzz.py::test_first_multiple_of_5 PASSED                       [ 75%]
 test_fizz_buzz.py::test_empty_list PASSED                                [100%]
 
-=================================== FAILURES ===================================
-___________________________ test_first_multiple_of_5 ___________________________
-
-    def test_first_multiple_of_5():
->       assert fizz_buzz(5) == [1, 2, 'Fizz', 4, 'Buzz']
-E       AssertionError: assert [1, 2, None, 4, None] == [1, 2, 'Fizz', 4, 'Buzz']
-E         At index 2 diff: None != 'Fizz'
-E         Full diff:
-E         - [1, 2, 'Fizz', 4, 'Buzz']
-E         + [1, 2, None, 4, None]
-
-test_fizz_buzz.py:13: AssertionError
-___________________________ test_first_multiple_of_3 ___________________________
-
-    def test_first_multiple_of_3():
->       assert fizz_buzz(3) == [1, 2, 'Fizz']
-E       AssertionError: assert [1, 2, None] == [1, 2, 'Fizz']
-E         At index 2 diff: None != 'Fizz'
-E         Full diff:
-E         - [1, 2, 'Fizz']
-E         + [1, 2, None]
-
-test_fizz_buzz.py:10: AssertionError
-=========================== short test summary info ============================
-FAILED test_fizz_buzz.py::test_first_multiple_of_5 - AssertionError: assert [...
-FAILED test_fizz_buzz.py::test_first_multiple_of_3 - AssertionError: assert [...
-========================= 2 failed, 2 passed in 0.08s ==========================
+============================== 4 passed in 0.04s ===============================

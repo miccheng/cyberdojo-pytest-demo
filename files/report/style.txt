@@ -1,6 +1,6 @@
-/sandbox/fizz_buzz.py:10:16: E226 missing whitespace around arithmetic operator
-    result = [n+1 for n in range(num_items)]
-               ^
+/sandbox/fizz_buzz.py:10:27: E226 missing whitespace around arithmetic operator
+    result = [__value_of(n+1) for n in range(num_items)]
+                          ^
     Surround operators with a single space on either side.
 
     - Always surround these binary operators with a single space on
@@ -28,6 +28,26 @@
     E226: hypot2 = x*x + y*y
     E227: c = a|b
     E228: msg = fmt%(errno, errmsg)
+/sandbox/fizz_buzz.py:18:22: W291 trailing whitespace
+        return 'Buzz'
+                     ^
+    Trailing whitespace is superfluous.
+
+    The warning returned varies on whether the line itself is blank,
+    for easier filtering for those who want to indent their blank lines.
+
+    Okay: spam(1)\n#
+    W291: spam(1) \n#
+    W293: class Foo(object):\n    \n    bang = 12
+/sandbox/fizz_buzz.py:20:19: W292 no newline at end of file
+        return num
+                  ^
+    Trailing blank lines are superfluous.
+
+    Okay: spam(1)
+    W391: spam(1)\n
+
+    However the last line should end with a new line (warning W292).
 /sandbox/test_fizz_buzz.py:13:53: W292 no newline at end of file
     assert fizz_buzz(5) == [1, 2, 'Fizz', 4, 'Buzz']
                                                     ^
