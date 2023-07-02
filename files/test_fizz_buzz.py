@@ -2,10 +2,10 @@ import pytest
 from fizz_buzz import fizz_buzz
 
 @pytest.mark.parametrize(
-    "test_input,expected", 
+    "test_input,expected",
     [
         (0, []),
-        (1, [1]), 
+        (1, [1]),
         (3, [1, 2, 'Fizz']),
         (5, [1, 2, 'Fizz', 4, 'Buzz']),
         (15, [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz'])
