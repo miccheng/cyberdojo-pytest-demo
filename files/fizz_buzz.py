@@ -9,6 +9,8 @@ Pick the style most suitable to your exercise.
 def fizz_buzz(num_items):
     result = [n+1 for n in range(num_items)]
     
-    result = ['Fizz' for w in result if w % 3 == 0]
+    for i in len(num_items):
+        if result[i] % 3 == 0:
+            result[i] = 'Fizz'
     
     return result
