@@ -7,7 +7,7 @@ Pick the style most suitable to your exercise.
 '''
 
 def fizz_buzz(num_items):
-    result = [__value_of(n+1) for n in range(num_items)]
+    result = [__value_of(n + 1) for n in range(num_items)]
     
     return result
 
