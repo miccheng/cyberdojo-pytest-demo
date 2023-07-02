@@ -2,12 +2,28 @@
 platform linux -- Python 3.9.1, pytest-6.2.2, py-1.10.0, pluggy-0.13.1 -- /usr/local/bin/python
 cachedir: .pytest_cache
 Using --random-order-bucket=global
-Using --random-order-seed=750859
+Using --random-order-seed=634075
 
 rootdir: /sandbox
 plugins: cov-2.11.1, mock-3.5.1, random-order-1.0.4
-collecting ... collected 1 item
+collecting ... collected 2 items
 
+test_fizz_buzz.py::test_one_item FAILED                                  [ 50%]
 test_fizz_buzz.py::test_empty_list PASSED                                [100%]
 
-============================== 1 passed in 0.03s ===============================
+=================================== FAILURES ===================================
+________________________________ test_one_item _________________________________
+
+    def test_one_item():
+>       assert fizz_buzz(1) == [1]
+E       assert [] == [1]
+E         Right contains one more item: 1
+E         Full diff:
+E         - [1]
+E         ?  -
+E         + []
+
+test_fizz_buzz.py:7: AssertionError
+=========================== short test summary info ============================
+FAILED test_fizz_buzz.py::test_one_item - assert [] == [1]
+========================= 1 failed, 1 passed in 0.06s ==========================
