@@ -427,5 +427,21 @@
       49,
       691940
     ]
+  },
+  {
+    "duration": 2.153077,
+    "colour": "amber",
+    "predicted": "none",
+    "revert_if_wrong": "off",
+    "index": 27,
+    "time": [
+      2023,
+      7,
+      2,
+      5,
+      34,
+      10,
+      203868
+    ]
   }
 ]
