@@ -2,22 +2,12 @@
 platform linux -- Python 3.9.1, pytest-6.2.2, py-1.10.0, pluggy-0.13.1 -- /usr/local/bin/python
 cachedir: .pytest_cache
 Using --random-order-bucket=global
-Using --random-order-seed=619207
+Using --random-order-seed=248566
 
 rootdir: /sandbox
 plugins: cov-2.11.1, mock-3.5.1, random-order-1.0.4
 collecting ... collected 1 item
 
-test_hiker.py::test_empty_list FAILED                                    [100%]
+test_hiker.py::test_empty_list PASSED                                    [100%]
 
-=================================== FAILURES ===================================
-_______________________________ test_empty_list ________________________________
-
-    def test_empty_list():
->       assert fizz_buzz(0) == []
-E       TypeError: fizz_buzz() takes 0 positional arguments but 1 was given
-
-test_hiker.py:4: TypeError
-=========================== short test summary info ============================
-FAILED test_hiker.py::test_empty_list - TypeError: fizz_buzz() takes 0 positi...
-============================== 1 failed in 0.06s ===============================
+============================== 1 passed in 0.03s ===============================

@@ -1,6 +1,6 @@
 Name            Stmts   Miss  Cover   Missing
 ---------------------------------------------
-hiker.py            5      0   100%
-test_hiker.py       5      0   100%
+hiker.py            2      0   100%
+test_hiker.py       3      0   100%
 ---------------------------------------------
-TOTAL              10      0   100%
+TOTAL               5      0   100%
