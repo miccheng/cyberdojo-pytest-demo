@@ -2,23 +2,22 @@
 platform linux -- Python 3.9.1, pytest-6.2.2, py-1.10.0, pluggy-0.13.1 -- /usr/local/bin/python
 cachedir: .pytest_cache
 Using --random-order-bucket=global
-Using --random-order-seed=261114
+Using --random-order-seed=619207
 
 rootdir: /sandbox
 plugins: cov-2.11.1, mock-3.5.1, random-order-1.0.4
-collecting ... collected 0 items / 1 error
+collecting ... collected 1 item
 
-==================================== ERRORS ====================================
-________________________ ERROR collecting test_hiker.py ________________________
-ImportError while importing test module '/sandbox/test_hiker.py'.
-Hint: make sure your test modules/packages have valid Python names.
-Traceback:
-/usr/local/lib/python3.9/importlib/__init__.py:127: in import_module
-    return _bootstrap._gcd_import(name[level:], package, level)
-test_hiker.py:1: in <module>
-    from hiker import global_answer, Hiker
-E   ImportError: cannot import name 'global_answer' from 'hiker' (/sandbox/hiker.py)
+test_hiker.py::test_empty_list FAILED                                    [100%]
+
+=================================== FAILURES ===================================
+_______________________________ test_empty_list ________________________________
+
+    def test_empty_list():
+>       assert fizz_buzz(0) == []
+E       TypeError: fizz_buzz() takes 0 positional arguments but 1 was given
+
+test_hiker.py:4: TypeError
 =========================== short test summary info ============================
-ERROR test_hiker.py
-!!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.19s ===============================
+FAILED test_hiker.py::test_empty_list - TypeError: fizz_buzz() takes 0 positi...
+============================== 1 failed in 0.06s ===============================
