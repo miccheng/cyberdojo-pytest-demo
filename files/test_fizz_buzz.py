@@ -12,5 +12,5 @@ def test_first_multiple_of_3():
 def test_first_multiple_of_5():
     assert fizz_buzz(5) == [1, 2, 'Fizz', 4, 'Buzz']
     
-def test_first_numtiple_of_3_and_5:
+def test_first_multiple_of_3_and_5():
     assert fizz_buzz(5) == [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']
