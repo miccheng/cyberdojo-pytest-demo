@@ -20,7 +20,7 @@ def __value_of(num):
     if num % 5 == 0:
         result += 'Buzz'
 
-    if len(result) == 0
+    if len(result) == 0:
         result = num
     
     return result
