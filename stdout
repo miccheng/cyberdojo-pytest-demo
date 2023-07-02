@@ -2,41 +2,42 @@
 platform linux -- Python 3.9.1, pytest-6.2.2, py-1.10.0, pluggy-0.13.1 -- /usr/local/bin/python
 cachedir: .pytest_cache
 Using --random-order-bucket=global
-Using --random-order-seed=222100
+Using --random-order-seed=959364
 
 rootdir: /sandbox
 plugins: cov-2.11.1, mock-3.5.1, random-order-1.0.4
 collecting ... collected 3 items
 
 test_fizz_buzz.py::test_one_item FAILED                                  [ 33%]
-test_fizz_buzz.py::test_first_multiple_of_3 FAILED                       [ 66%]
-test_fizz_buzz.py::test_empty_list PASSED                                [100%]
+test_fizz_buzz.py::test_empty_list PASSED                                [ 66%]
+test_fizz_buzz.py::test_first_multiple_of_3 FAILED                       [100%]
 
 =================================== FAILURES ===================================
 ________________________________ test_one_item _________________________________
 
     def test_one_item():
 >       assert fizz_buzz(1) == [1]
-E       AssertionError: assert ['Fizz'] == [1]
-E         At index 0 diff: 'Fizz' != 1
+E       assert [] == [1]
+E         Right contains one more item: 1
 E         Full diff:
 E         - [1]
-E         + ['Fizz']
+E         ?  -
+E         + []
 
 test_fizz_buzz.py:7: AssertionError
 ___________________________ test_first_multiple_of_3 ___________________________
 
     def test_first_multiple_of_3():
 >       assert fizz_buzz(3) == [1, 2, 'Fizz']
-E       AssertionError: assert ['Fizz', 'Fizz'] == [1, 2, 'Fizz']
+E       AssertionError: assert ['Fizz'] == [1, 2, 'Fizz']
 E         At index 0 diff: 'Fizz' != 1
-E         Right contains one more item: 'Fizz'
+E         Right contains 2 more items, first extra item: 2
 E         Full diff:
 E         - [1, 2, 'Fizz']
-E         + ['Fizz', 'Fizz']
+E         + ['Fizz']
 
 test_fizz_buzz.py:10: AssertionError
 =========================== short test summary info ============================
-FAILED test_fizz_buzz.py::test_one_item - AssertionError: assert ['Fizz'] == [1]
+FAILED test_fizz_buzz.py::test_one_item - assert [] == [1]
 FAILED test_fizz_buzz.py::test_first_multiple_of_3 - AssertionError: assert [...
 ========================= 2 failed, 1 passed in 0.08s ==========================
