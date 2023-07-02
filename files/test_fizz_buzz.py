@@ -12,7 +12,7 @@ from fizz_buzz import fizz_buzz
     ]
 )
 def test_fizz_buzz(test_input, expected):
-    print('Expecting input of () will result in ()'.format(test_input, expected))
+    print('Expecting input of {} will result in {}'.format(test_input, expected))
     assert fizz_buzz(test_input) == expected
     
 
