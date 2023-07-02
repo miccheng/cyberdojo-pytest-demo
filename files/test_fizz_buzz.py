@@ -11,9 +11,9 @@ from fizz_buzz import fizz_buzz
         (15, [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz'])
     ]
 )
-def test_fizz_buzz(test_input, expected):
-    print('Expecting input of {} will result in {}'.format(test_input, expected))
-    assert fizz_buzz(test_input) == expected
+def test_fizz_buzz(num, expected):
+    print('Expecting input of {} will result in {}'.format(num, expected))
+    assert fizz_buzz(num) == expected
     
 
 '''
