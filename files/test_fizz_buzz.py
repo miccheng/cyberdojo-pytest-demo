@@ -1,5 +1,5 @@
+import pytest
 from fizz_buzz import fizz_buzz
-
 
 @pytest.mark.parametrize(
     "test_input,expected", 
