@@ -6,10 +6,5 @@ They show examples of writing and testing
 Pick the style most suitable to your exercise.
 '''
 
-def global_answer():
-    return 6 * 7
-
-class Hiker:
-
-    def instance_answer(self):
-        return global_answer()
+def fizz_buzz():
+    return []
