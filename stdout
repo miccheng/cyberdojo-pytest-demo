@@ -2,16 +2,21 @@
 platform linux -- Python 3.9.1, pytest-6.2.2, py-1.10.0, pluggy-0.13.1 -- /usr/local/bin/python
 cachedir: .pytest_cache
 Using --random-order-bucket=global
-Using --random-order-seed=22883
+Using --random-order-seed=8241
 
 rootdir: /sandbox
 plugins: cov-2.11.1, mock-3.5.1, random-order-1.0.4
 collecting ... collected 5 items
 
-test_fizz_buzz.py::test_fizz_buzz[1-expected1] PASSED                    [ 20%]
-test_fizz_buzz.py::test_fizz_buzz[3-expected2] PASSED                    [ 40%]
-test_fizz_buzz.py::test_fizz_buzz[5-expected3] PASSED                    [ 60%]
-test_fizz_buzz.py::test_fizz_buzz[15-expected4] PASSED                   [ 80%]
-test_fizz_buzz.py::test_fizz_buzz[0-expected0] PASSED                    [100%]
+test_fizz_buzz.py::test_fizz_buzz[5-expected3] Expecting input of () will result in ()
+PASSED                    [ 20%]
+test_fizz_buzz.py::test_fizz_buzz[15-expected4] Expecting input of () will result in ()
+PASSED                   [ 40%]
+test_fizz_buzz.py::test_fizz_buzz[0-expected0] Expecting input of () will result in ()
+PASSED                    [ 60%]
+test_fizz_buzz.py::test_fizz_buzz[3-expected2] Expecting input of () will result in ()
+PASSED                    [ 80%]
+test_fizz_buzz.py::test_fizz_buzz[1-expected1] Expecting input of () will result in ()
+PASSED                    [100%]
 
 ============================== 5 passed in 0.04s ===============================
