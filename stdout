@@ -2,21 +2,21 @@
 platform linux -- Python 3.9.1, pytest-6.2.2, py-1.10.0, pluggy-0.13.1 -- /usr/local/bin/python
 cachedir: .pytest_cache
 Using --random-order-bucket=global
-Using --random-order-seed=962210
+Using --random-order-seed=576256
 
 rootdir: /sandbox
 plugins: cov-2.11.1, mock-3.5.1, random-order-1.0.4
 collecting ... collected 5 items
 
-test_fizz_buzz.py::test_fizz_buzz[5-expected3] Expecting input of 5 will result in [1, 2, 'Fizz', 4, 'Buzz']
-PASSED                    [ 20%]
-test_fizz_buzz.py::test_fizz_buzz[15-expected4] Expecting input of 15 will result in [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']
-PASSED                   [ 40%]
 test_fizz_buzz.py::test_fizz_buzz[1-expected1] Expecting input of 1 will result in [1]
-PASSED                    [ 60%]
+PASSED                    [ 20%]
 test_fizz_buzz.py::test_fizz_buzz[3-expected2] Expecting input of 3 will result in [1, 2, 'Fizz']
-PASSED                    [ 80%]
+PASSED                    [ 40%]
 test_fizz_buzz.py::test_fizz_buzz[0-expected0] Expecting input of 0 will result in []
+PASSED                    [ 60%]
+test_fizz_buzz.py::test_fizz_buzz[15-expected4] Expecting input of 15 will result in [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']
+PASSED                   [ 80%]
+test_fizz_buzz.py::test_fizz_buzz[5-expected3] Expecting input of 5 will result in [1, 2, 'Fizz', 4, 'Buzz']
 PASSED                    [100%]
 
 ============================== 5 passed in 0.03s ===============================
