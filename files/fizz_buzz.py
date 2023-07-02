@@ -12,5 +12,7 @@ def fizz_buzz(num_items):
     for i in range(num_items):
         if result[i] % 3 == 0:
             result[i] = 'Fizz'
+        elif result[i] % 5 == 0:
+            result[i] = 'Buzz'
     
     return result

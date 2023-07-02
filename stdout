@@ -2,31 +2,15 @@
 platform linux -- Python 3.9.1, pytest-6.2.2, py-1.10.0, pluggy-0.13.1 -- /usr/local/bin/python
 cachedir: .pytest_cache
 Using --random-order-bucket=global
-Using --random-order-seed=906483
+Using --random-order-seed=344175
 
 rootdir: /sandbox
 plugins: cov-2.11.1, mock-3.5.1, random-order-1.0.4
 collecting ... collected 4 items
 
-test_fizz_buzz.py::test_first_multiple_of_3 PASSED                       [ 25%]
-test_fizz_buzz.py::test_first_multiple_of_5 FAILED                       [ 50%]
-test_fizz_buzz.py::test_empty_list PASSED                                [ 75%]
+test_fizz_buzz.py::test_first_multiple_of_5 PASSED                       [ 25%]
+test_fizz_buzz.py::test_empty_list PASSED                                [ 50%]
+test_fizz_buzz.py::test_first_multiple_of_3 PASSED                       [ 75%]
 test_fizz_buzz.py::test_one_item PASSED                                  [100%]
 
-=================================== FAILURES ===================================
-___________________________ test_first_multiple_of_5 ___________________________
-
-    def test_first_multiple_of_5():
->       assert fizz_buzz(5) == [1, 2, 'Fizz', 4, 'Buzz']
-E       AssertionError: assert [1, 2, 'Fizz', 4, 5] == [1, 2, 'Fizz', 4, 'Buzz']
-E         At index 4 diff: 5 != 'Buzz'
-E         Full diff:
-E         - [1, 2, 'Fizz', 4, 'Buzz']
-E         ?                   ^^^^^^
-E         + [1, 2, 'Fizz', 4, 5]
-E         ?                   ^
-
-test_fizz_buzz.py:13: AssertionError
-=========================== short test summary info ============================
-FAILED test_fizz_buzz.py::test_first_multiple_of_5 - AssertionError: assert [...
-========================= 1 failed, 3 passed in 0.07s ==========================
+============================== 4 passed in 0.04s ===============================
