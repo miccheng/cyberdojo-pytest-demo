@@ -8,3 +8,6 @@ def test_one_item():
 
 def test_first_multiple_of_3():
     assert fizz_buzz(3) == [1, 2, 'Fizz']
+    
+def test_first_multiple_of_5():
+    assert fizz_buzz(5) == [1, 2, 'Fizz', 4, 'Buzz']
