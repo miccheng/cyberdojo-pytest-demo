@@ -12,7 +12,7 @@ def fizz_buzz(num_items):
     return result
 
 def __value_of(num):
-    if (num % 3 == 0) AND (num % 5 == 0):
+    if (num % 3 == 0) and (num % 5 == 0):
         return 'FizzBuzz'        
     elif num % 3 == 0:
         return 'Fizz'
