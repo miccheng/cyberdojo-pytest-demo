@@ -1,0 +1,9 @@
+/sandbox/test_fizz_buzz.py:7:31: W292 no newline at end of file
+    assert fizz_buzz(1) == [1]
+                              ^
+    Trailing blank lines are superfluous.
+
+    Okay: spam(1)
+    W391: spam(1)\n
+
+    However the last line should end with a new line (warning W292).
