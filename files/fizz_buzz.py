@@ -7,7 +7,8 @@ Pick the style most suitable to your exercise.
 '''
 
 def fizz_buzz(num_items):
-    if num_items == 3:
-        return [1, 2, 'Fizz']
-
-    return []
+    result = [n+1 for n in range(num_items)]
+    
+    result = ['Fizz' for w in result if w % 3]
+    
+    return result
