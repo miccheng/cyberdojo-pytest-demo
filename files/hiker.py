@@ -7,7 +7,7 @@ Pick the style most suitable to your exercise.
 '''
 
 def global_answer():
-    return 6 * 9
+    return 6 * 7
 
 class Hiker:
 
