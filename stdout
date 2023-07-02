@@ -2,7 +2,7 @@
 platform linux -- Python 3.9.1, pytest-6.2.2, py-1.10.0, pluggy-0.13.1 -- /usr/local/bin/python
 cachedir: .pytest_cache
 Using --random-order-bucket=global
-Using --random-order-seed=525887
+Using --random-order-seed=48773
 
 rootdir: /sandbox
 plugins: cov-2.11.1, mock-3.5.1, random-order-1.0.4
@@ -29,10 +29,10 @@ ______________________ ERROR collecting test_fizz_buzz.py ______________________
 test_fizz_buzz.py:1: in <module>
     from fizz_buzz import fizz_buzz
 E     File "/sandbox/fizz_buzz.py", line 15
-E       if (num % 3 == 0) && (num % 5 == 0):
-E                          ^
+E       if (num % 3 == 0) AND (num % 5 == 0):
+E                         ^
 E   SyntaxError: invalid syntax
 =========================== short test summary info ============================
 ERROR test_fizz_buzz.py
 !!!!!!!!!!!!!!!!!!!! Interrupted: 1 error during collection !!!!!!!!!!!!!!!!!!!!
-=============================== 1 error in 0.33s ===============================
+=============================== 1 error in 0.30s ===============================
