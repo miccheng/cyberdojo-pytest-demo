@@ -16,5 +16,5 @@ def __value_of(num):
         'Fizz'
     elif num % 5 == 0:
         'Buzz'    
-    else
+    else:
         return num
