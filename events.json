@@ -603,5 +603,21 @@
       57,
       160104
     ]
+  },
+  {
+    "duration": 1.957096,
+    "colour": "green",
+    "predicted": "none",
+    "revert_if_wrong": "off",
+    "index": 38,
+    "time": [
+      2023,
+      7,
+      2,
+      5,
+      56,
+      20,
+      621305
+    ]
   }
 ]
