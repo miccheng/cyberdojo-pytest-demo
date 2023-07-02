@@ -37,12 +37,3 @@
     comments), limiting the length to 72 characters is recommended.
 
     Reports error E501.
-/sandbox/test_fizz_buzz.py:34:4: W292 no newline at end of file
-'''
-   ^
-    Trailing blank lines are superfluous.
-
-    Okay: spam(1)
-    W391: spam(1)\n
-
-    However the last line should end with a new line (warning W292).
