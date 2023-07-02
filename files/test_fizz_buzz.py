@@ -2,7 +2,7 @@ import pytest
 from fizz_buzz import fizz_buzz
 
 @pytest.mark.parametrize(
-    "test_input,expected",
+    "num, expected",
     [
         (0, []),
         (1, [1]),
