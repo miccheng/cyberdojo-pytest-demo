@@ -9,7 +9,7 @@ Pick the style most suitable to your exercise.
 def fizz_buzz(num_items):
     result = [n+1 for n in range(num_items)]
     
-    for i in len(num_items):
+    for i in range(num_items):
         if result[i] % 3 == 0:
             result[i] = 'Fizz'
     
