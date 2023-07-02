@@ -7,12 +7,14 @@ Pick the style most suitable to your exercise.
 '''
 
 def fizz_buzz(num_items):
-    result = [n+1 for n in range(num_items)]
-    
-    for i in range(num_items):
-        if result[i] % 3 == 0:
-            result[i] = 'Fizz'
-        elif result[i] % 5 == 0:
-            result[i] = 'Buzz'
+    result = [__value_of(n+1) for n in range(num_items)]
     
     return result
+
+def __value_of(num):
+    if num % 3 == 0:
+        'Fizz'
+    elif num % 5 == 0:
+        'Buzz'    
+    else
+        return num
